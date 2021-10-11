@@ -1,0 +1,23 @@
+@import "../../styles/colors";
+@import "../../styles/sizes";
+
+nav {
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: $white;
+  border-bottom: 1px solid $grey;
+}
+
+.nav__section {
+  display: flex;
+}
+
+.logo {
+  line-height: 50px;
+  height: 100%;
+  margin: 0 $standard-size;
+  min-width: 100px;
+}

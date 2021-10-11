@@ -1,0 +1,21 @@
+@import "../../styles/sizes";
+@import "../../styles/animations";
+
+.free__tag-text {
+  width: 40px;
+  height: 20px;
+  text-transform: lowercase;
+  top: -25px;
+  background-color: #448314;
+  line-height: 20px;
+  text-align: center;
+  font-family: robotoRegular, serif;
+  font-weight: 700;
+  padding: 3px;
+  color: #fff;
+  right: -25px;
+  margin-top: $standard-size;
+  user-select: none;
+}
+
+

@@ -1,0 +1,22 @@
+@import "sizes";
+@import "colors";
+@import "buttons";
+@import "fonts";
+@import "layout";
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.app__container {
+  background: $base;
+}
+
+.split {
+  margin: 0 $split-margin;
+}
+
+p {
+  font-family: robotoRegular, serif;
+}

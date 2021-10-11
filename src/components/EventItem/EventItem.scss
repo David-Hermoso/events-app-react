@@ -1,0 +1,64 @@
+@import "../../styles/sizes";
+@import "../../styles/media";
+@import "../../styles/colors";
+
+.event__item {
+  display: flex;
+  margin: $standard-size 0;
+  position: relative;
+
+  &:hover {
+    .cta__button-container {
+      animation: shake 0.8s ease-in-out;
+    }
+
+    @media (hover: none) {
+      .cta__button-container {
+        animation: none;
+      }
+    }
+  }
+}
+
+.event__details {
+  flex-grow: 1;
+}
+
+.event__title {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: Courier, serif;
+  width: 100%;
+  word-break: break-word;
+}
+
+.event__info {
+  margin-top: $standard-size;
+  word-break: break-word;
+}
+
+.event__cta {
+  display: flex;
+  align-items: center;
+  margin-left: $standard-size;
+}
+
+.event__time--l {
+  display: none;
+  align-items: center;
+  padding-right: $standard-size;
+  margin-right: $standard-size;
+  border-right: 1px solid $grey;
+}
+
+@media (min-width: $md) {
+  .event__time--l {
+    display: flex;
+  }
+
+  .event__time--s {
+    display: none;
+  }
+}
+
+
